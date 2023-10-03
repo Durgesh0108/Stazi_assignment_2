@@ -5,11 +5,11 @@ const Rent = ({property}) => {
   return (
 		<div className="flex justify-between p-3 items-center">
 			<div>
-				<span>${property.rent}</span>
+				<span className='text-xl font-semibold text-indigo-600'>${property.rent}</span>
 				<span>/month</span>
 			</div>
 			<div>
-				<Button>Read More</Button>
+				<Button className="">Read More</Button>
 			</div>
 		</div>
   );

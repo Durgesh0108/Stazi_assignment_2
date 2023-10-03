@@ -5,11 +5,14 @@ const Address = ({ property }) => {
 	return (
 		<div>
 			<div className="flex gap-3 items-center">
-				<CiLocationOn />
+				<CiLocationOn fill="#946462" />
 				<span>{property.location.street}</span>
 			</div>
 			<div>
-				<span>{property.location.address}</span>
+				<span className="text-lg font-semibold">
+					{property.name} - {property.location.address},{" "}
+					{property.location.city}
+				</span>
 			</div>
 		</div>
 	);
