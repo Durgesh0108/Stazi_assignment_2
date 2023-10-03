@@ -1,6 +1,9 @@
 import React from 'react'
+import Property from '../data'
 
-const PropertyDetails = () => {
+const PropertyDetails = () =>
+{
+    
   return (
     <div>
       Property Details
