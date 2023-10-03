@@ -2,21 +2,45 @@ import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PropertyList from "./Pages/PropertyList";
 import PropertyDetails from "./Pages/PropertyDetails";
+import Home from "./Pages/Home";
 
 const router = createBrowserRouter([
 	{
-		path: "/property",
+		path: "/",
 		children: [
 			{
 				index: true,
-				element:<PropertyList/>
+				element: <Home />,
 			},
 			{
-				path: ":id",
-				element: <PropertyDetails/>,
+				path: "property",
+				children: [
+					{
+						index: true,
+						element: <PropertyList />,
+					},
+					{
+						path: ":id",
+						element: <PropertyDetails />,
+					},
+				],
 			},
 		],
 	},
+
+	// {
+	// 	path: "/property",
+	// 	children: [
+	// 		{
+	// 			index: true,
+	// 			element:<PropertyList/>
+	// 		},
+	// 		{
+	// 			path: ":id",
+	// 			element: <PropertyDetails/>,
+	// 		},
+	// 	],
+	// },
 ]);
 
 function App() {

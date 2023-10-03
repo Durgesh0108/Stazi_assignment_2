@@ -165,7 +165,7 @@ const PropertyList = () => {
 						</Link>
 					))}
 				</ul>
-				<Button onClick={showMoreHandler} className='w-fit self-center text-black px-4 bg-indigo-600'>Show More</Button>
+				<Button onClick={showMoreHandler} className='w-fit self-center text-white px-4 bg-indigo-600'>Show More</Button>
 			</div>
 		</div>
 	);
