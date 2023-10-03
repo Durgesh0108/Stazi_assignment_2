@@ -1,11 +1,13 @@
-import React, { useCallback, useEffect, useReducer, useState } from "react";
+import React, { useCallback, useEffect, useReducer } from "react";
 import Property from "../data";
 import Header from "../Components/Header/Header";
 import { Link } from "react-router-dom";
 import Card from "../Components/Card/Card";
-import Image from "../Components/Image/Image";
 
-import { CiLocationOn } from 'react-icons/ci';
+import Detail from "../Components/Property/Details/Detail";
+import Address from "../Components/Property/Address/Address";
+import Rent from "../Components/Property/Rent/Rent";
+import ImageRent from "../Components/Image_Rent/Image_Rent";
 
 const InitialState = {
 	properties: Property,
@@ -44,7 +46,6 @@ const PropertyListReducer = (state, action) => {
 };
 
 const PropertyList = () => {
-	// const [dataAvailable, setDataAvailable] = useState(true)
 	const [propertyList, dispatchPropertyList] = useReducer(
 		PropertyListReducer,
 		InitialState
@@ -71,14 +72,11 @@ const PropertyList = () => {
 		console.log(propertyList.properties);
 	};
 
-	// if (propertyList.properties.length() < propertyList.propertyPerPage)
-	// {
-	// 	setDataAvailable(false)
-	// }
 	return (
 		<div className="bg-slate-300 ">
-			<div className="container m-auto py-8">
+			<div className="container m-auto py-8 px-10">
 				<Header />
+
 				<div className="flex gap-6 my-6">
 					<button
 						value="New York"
@@ -105,54 +103,24 @@ const PropertyList = () => {
 						London
 					</button>
 				</div>
-				<ul className="grid grid-cols-3 gap-4">
+				<ul className="grid grid-cols-3 gap-6">
 					{propertyList.properties.map((property) => (
 						<Link to={`/property/${property.id}`}>
 							<Card>
 								<li key={property.id}>
-									<div>
-										<Image
-											property={property}
-											height={"h-[300px]"}
-										/>
-										<div></div>
-									</div>
-									<div className="flex gap-3 ali">
-										<CiLocationOn/>
-										<span>{property.location.street}</span>
-									</div>
-									<div>
-										<span>{property.location.address}</span>
-									</div>
-									<div className="flex gap-3">
-										<div>
-											<span>{property.rooms}</span>
-										</div>
-										<div>
-											<span>{property.bed}</span>
-										</div>
-										<div>
-											<span>{property.bathroom}</span>
-										</div>
-										<div>
-											<span>{property.area}</span>
-										</div>
-									</div>
-									<div>
-										<div>
-											<span>${property.rent}</span>
-											<span>/month</span>
-										</div>
-										<div>
-											{/* <Button/> */}
-										</div>
+									<ImageRent property={property} />
+
+									<div className="flex flex-col gap-y-4 px-4">
+										<Address property={property} />
+										<Detail property={property} />
+										<Rent property={property} />
 									</div>
 								</li>
 							</Card>
 						</Link>
 					))}
 				</ul>
-				{<button onClick={showMoreHandler}>Show More</button>}
+				<button onClick={showMoreHandler}>Show More</button>
 			</div>
 		</div>
 	);

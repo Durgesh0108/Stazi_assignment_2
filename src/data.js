@@ -12,6 +12,8 @@ const Property = [
 		area: 732,
 		rent: 7255,
 		image: "property-1",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 2,
@@ -26,6 +28,8 @@ const Property = [
 		area: 732,
 		rent: 7255,
 		image: "property-2",
+		isFor: "Sale",
+		isPopular: false,
 	},
 	{
 		id: 3,
@@ -40,6 +44,8 @@ const Property = [
 		area: 732,
 		rent: 5256,
 		image: "property-3",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 4,
@@ -54,6 +60,8 @@ const Property = [
 		area: 732,
 		rent: 6235,
 		image: "property-4",
+		isFor: "Sale",
+		isPopular: true,
 	},
 	{
 		id: 5,
@@ -68,6 +76,8 @@ const Property = [
 		area: 732,
 		rent: 4200,
 		image: "property-5",
+		isFor: "Rent",
+		isPopular: false,
 	},
 	{
 		id: 6,
@@ -82,6 +92,8 @@ const Property = [
 		area: 732,
 		rent: 5236,
 		image: "property-6",
+		isFor: "Sale",
+		isPopular: false,
 	},
 	{
 		id: 7,
@@ -96,6 +108,8 @@ const Property = [
 		area: 732,
 		rent: 7255,
 		image: "property-7",
+		isFor: "Sale",
+		isPopular: false,
 	},
 	{
 		id: 8,
@@ -110,6 +124,8 @@ const Property = [
 		area: 732,
 		rent: 5256,
 		image: "property-8",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 9,
@@ -124,6 +140,8 @@ const Property = [
 		area: 732,
 		rent: 6235,
 		image: "property-9",
+		isFor: "Rent",
+		isPopular: false,
 	},
 	{
 		id: 10,
@@ -138,6 +156,8 @@ const Property = [
 		area: 732,
 		rent: 4200,
 		image: "property-10",
+		isFor: "Rent",
+		isPopular: false,
 	},
 	{
 		id: 11,
@@ -152,6 +172,8 @@ const Property = [
 		area: 732,
 		rent: 6235,
 		image: "property-1",
+		isFor: "Sale",
+		isPopular: true,
 	},
 	{
 		id: 12,
@@ -166,6 +188,8 @@ const Property = [
 		area: 732,
 		rent: 4200,
 		image: "property-2",
+		isFor: "Rent",
+		isPopular: false,
 	},
 	{
 		id: 13,
@@ -180,6 +204,8 @@ const Property = [
 		area: 732,
 		rent: 7255,
 		image: "property-3",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 14,
@@ -194,6 +220,8 @@ const Property = [
 		area: 732,
 		rent: 7255,
 		image: "property-4",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 15,
@@ -208,6 +236,8 @@ const Property = [
 		area: 732,
 		rent: 5256,
 		image: "property-5",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 16,
@@ -222,6 +252,8 @@ const Property = [
 		area: 732,
 		rent: 6235,
 		image: "property-6",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 17,
@@ -236,6 +268,8 @@ const Property = [
 		area: 732,
 		rent: 4200,
 		image: "property-7",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 18,
@@ -250,6 +284,8 @@ const Property = [
 		area: 732,
 		rent: 5236,
 		image: "property-8",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 19,
@@ -264,6 +300,8 @@ const Property = [
 		area: 732,
 		rent: 7255,
 		image: "property-9",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 20,
@@ -278,6 +316,8 @@ const Property = [
 		area: 732,
 		rent: 5256,
 		image: "property-10",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 21,
@@ -292,6 +332,8 @@ const Property = [
 		area: 732,
 		rent: 6235,
 		image: "property-1",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 22,
@@ -306,6 +348,8 @@ const Property = [
 		area: 732,
 		rent: 4200,
 		image: "property-2",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 23,
@@ -320,6 +364,8 @@ const Property = [
 		area: 732,
 		rent: 6235,
 		image: "property-3",
+		isFor: "Rent",
+		isPopular: true,
 	},
 	{
 		id: 24,
@@ -334,8 +380,9 @@ const Property = [
 		area: 732,
 		rent: 4200,
 		image: "property-4",
+		isFor: "Rent",
+		isPopular: true,
 	},
-	
 ];
 
 export default Property
