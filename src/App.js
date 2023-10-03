@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PropertyList from "./Pages/PropertyList";
 import PropertyDetails from "./Pages/PropertyDetails";
